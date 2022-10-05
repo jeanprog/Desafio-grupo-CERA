@@ -21,7 +21,7 @@
         spellcheck="false"
         placeholder="Digite aqui..."
         v-model="name"/> 
-        {{name}}
+        
       </div>
       <!-- Whatsapp -->
       <label>Whatsapp <span>*</span></label>
@@ -31,12 +31,12 @@
          spellcheck="false" 
          placeholder="(99) 99999-9999"
          v-model="whats" /> 
-         {{ whats }}
+        
       </div>
       <button 
       type="button"
        class="principal"
-       @click="addClient">Salvar Cliente</button>
+       @click="addClient"> Salvar Cliente</button>
     </div>
   </section>
 </template>
@@ -52,9 +52,6 @@
   const store = userStore()
   const emit = defineEmits()
   
-  /* const closeModal = () => { 
-       emit('update' , 'close')
-  }  */ 
    
  const addClient = async () => {
    store.addUser({ name: name.value , whats: whats.value})
