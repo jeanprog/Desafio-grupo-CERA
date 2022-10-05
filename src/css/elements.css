@@ -1,0 +1,668 @@
+/* Button Principal */
+a.principal,
+button.principal {
+  position: relative;
+  padding: 20px 25px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  background: var(--cor-cera-fixo);
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-branco-fixo);
+  transition: all 0.3s;
+}
+a.principal:hover,
+button.principal:hover {
+  background: var(--cor-cera-escuro-fixo);
+}
+a.principal:disabled,
+button.principal:disabled {
+  pointer-events: none;
+  background: var(--cor-cera-fixo);
+  color: var(--cor-cera-fixo);
+}
+/* Verde */
+a.principal.verde,
+button.principal.verde {
+  background: var(--cor-verde);
+}
+a.principal.verde:hover,
+button.principal.verde:hover {
+  background: var(--cor-verde-2);
+}
+a.principal.verde:disabled,
+button.principal.verde:disabled {
+  background: var(--cor-verde);
+  color: var(--cor-verde);
+}
+/* Vermelho */
+a.principal.vermelho,
+button.principal.vermelho {
+  background: var(--cor-vermelho);
+}
+a.principal.vermelho:hover,
+button.principal.vermelho:hover {
+  background: var(--cor-vermelho-2);
+}
+a.principal.vermelho:disabled,
+button.principal.vermelho:disabled {
+  background: var(--cor-vermelho);
+  color: var(--cor-vermelho);
+}
+/* Cinza */
+a.principal.cinza,
+button.principal.cinza {
+  background: var(--cor-modal-cinza);
+}
+a.principal.cinza:hover,
+button.principal.cinza:hover {
+  background: var(--cor-modal-cinza-2);
+}
+a.principal.cinza:disabled,
+button.principal.cinza:disabled {
+  background: var(--cor-modal-cinza);
+  color: var(--cor-modal-cinza);
+}
+a.principal span,
+button.principal span {
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  min-height: 15px;
+  border: 5px solid var(--cor-branco-fixo);
+  border-top: 5px solid var(--cor-cera-fixo);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rodandoSpan 0.3s linear infinite;
+  pointer-events: none;
+  opacity: 0;
+  visibility: visible;
+  transition: all 0.3s;
+}
+a.principal.verde span,
+button.principal.verde span {
+  border-top: 5px solid var(--cor-verde);
+}
+a.principal.vermelho span,
+button.principal.vermelho span {
+  border-top: 5px solid var(--cor-vermelho);
+}
+a.principal.cinza span,
+button.principal.cinza span {
+  border-top: 5px solid var(--cor-modal-cinza-2);
+}
+a.principal:disabled span,
+button.principal:disabled span {
+  opacity: 1;
+  visibility: visible;
+}
+@keyframes rodandoSpan {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+a.principal.desativado,
+button.principal.desativado {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/* Input */
+.input {
+  width: 100%;
+  position: relative;
+}
+.input input {
+  padding: 20px 20px 20px 50px;
+}
+.input svg {
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  left: 20px;
+  width: 20px;
+  min-width: 20px;
+  fill: var(--cor-cera);
+}
+.input.cinza svg {
+  fill: var(--cor-modal-cinza)
+}
+input {
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-input-branco);
+  background-color: var(--cor-input-fundo);
+  border: 2px solid var(--cor-input-fundo);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s;
+}
+input:hover {
+  border: 2px solid var(--cor-input-borda);
+}
+input::placeholder {
+  opacity: 1;
+  color: var(--cor-input-cinza);
+}
+input:focus {
+  color: var(--cor-input-preto);
+  border: 2px solid var(--cor-cera);
+}
+/* Textarea */
+textarea {
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  line-height: 1.5;
+  color: var(--cor-input-branco);
+  background-color: var(--cor-input-fundo);
+  border: 2px solid var(--cor-input-fundo);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s;
+  resize: none;
+}
+textarea:hover {
+  border: 2px solid var(--cor-input-borda);
+}
+textarea::placeholder {
+  opacity: 1;
+  color: var(--cor-input-cinza);
+}
+textarea:focus {
+  color: var(--cor-input-preto);
+  border: 2px solid var(--cor-cera);
+}
+/* Label */
+label {
+  display: flex;
+  align-items: flex-end;
+  font-family: var(--regular);
+  font-size: clamp(0.6rem, 3vw, 0.8rem);
+  color: var(--cor-label-branco);
+}
+label span {
+  font-family: var(--bold);
+  color: var(--cor-vermelho);
+  margin: 0 0 0 5px;
+}
+label button.novo {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  font-family: var(--bold);
+  font-size: clamp(0.6rem, 3vw, 0.8rem);
+  color: var(--cor-modal-cinza);
+  border: 1px solid var(--cor-modal-cinza);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 0 0 20px;
+  transition: all 0.3s;
+}
+label button.novo.verde {
+  color: var(--cor-verde);
+  border: 1px solid var(--cor-verde);
+}
+label button.novo.vermelho {
+  color: var(--cor-vermelho);
+  border: 1px solid var(--cor-vermelho);
+}
+label button.novo:hover {
+  color: var(--cor-branco);
+  border: 1px solid var(--cor-branco);
+}
+label button.novo.verde:hover {
+  color: var(--cor-verde-2);
+  border: 1px solid var(--cor-verde-2);
+}
+label button.novo.vermelho:hover {
+  color: var(--cor-vermelho-2);
+  border: 1px solid var(--cor-vermelho-2);
+}
+label button.novo:hover svg {
+  fill: var(--cor-branco)
+}
+label button.novo.verde:hover svg {
+  fill: var(--cor-verde-2);
+}
+label button.novo.verde svg {
+  fill: var(--cor-verde);
+}
+label button.novo.vermelho:hover svg {
+  fill: var(--cor-vermelho-2);
+}
+label button.novo.vermelho svg {
+  fill: var(--cor-vermelho);
+}
+label button.novo svg {
+  width: 10px;
+  min-width: 10px;
+  fill: var(--cor-modal-cinza);
+  margin: 0 5px 2px 0;
+  transition: all 0.3s;
+}
+/* Select */
+.quadro .select {
+  position: relative;
+  width: 100%;
+}
+.quadro .select h5 {
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-input-cinza);
+  background-color: var(--cor-input-fundo);
+  border: 2px solid var(--cor-input-fundo);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.quadro .select h5:hover {
+  border: 2px solid var(--cor-input-borda);
+}
+.quadro .select.ativo h5 {
+  color: var(--cor-input-branco);
+  border: 2px solid var(--cor-cera);
+}
+.quadro .select.selecionado h5 {
+  color: var(--cor-input-branco);
+  border: 2px solid var(--cor-input-fundo);
+}
+.quadro .select svg {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 15px;
+  min-width: 15px;
+  fill: var(--cor-modal-cinza-2);
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.quadro .select.ativo svg {
+  fill: var(--cor-cera);
+}
+.quadro .select .lista {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
+  height: 300px;
+  max-height: 300px;
+  min-height: 300px;
+  overflow-y: scroll;
+  background-color: var(--cor-seletor-fundo);
+  box-shadow: var(--cor-seletor-sombra);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 70px;
+  left: -10px;
+  transition: all 0.3s;
+  scrollbar-color: var(--cor-scrollbar-claro) var(--cor-scrollbar-escuro);
+  scrollbar-width: thin;
+}
+.quadro .select .lista::-webkit-scrollbar-track {
+  background-color: var(--cor-seletor-fundo);
+  border-radius: 15px;
+  width: 15px;
+}
+.quadro .select .lista::-webkit-scrollbar {
+  border-radius: 15px;
+  width: 15px;
+}
+.quadro .select .lista::-webkit-scrollbar-thumb {
+  background-color: var(--cor-fundo-tela);
+  border: 3px solid var(--cor-seletor-fundo);
+  border-radius: 15px;
+  width: 15px;
+}
+.quadro .select .lista::-webkit-scrollbar-corner {
+  background-color: var(--cor-seletor-fundo);
+}
+.quadro .select.ativo .lista {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  pointer-events: all;
+}
+.quadro .select .lista p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-seletor-cinza-2);
+  transition: all 0.3s;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.quadro .select .lista p:hover,
+.quadro .select .lista p:hover svg {
+  color: var(--cor-seletor-branco);
+  fill: var(--cor-seletor-branco);
+}
+.quadro .select .lista p svg {
+  position: initial;
+  width: 20px;
+  margin-right: 10px;
+  fill: var(--cor-seletor-cinza-2);
+}
+@media screen and (max-width: 1000px) {
+  .quadro .select .lista {
+    width: 160px;
+    max-width: 160px;
+    min-width: 160px;
+  }
+  .quadro .select svg {
+    right: 15px;
+    top: 22px;
+  }
+}
+/* Seletor Métodos */
+.quadro .selectMetodos {
+  position: relative;
+  width: 100%;
+}
+.quadro .selectMetodos h5 {
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-input-cinza);
+  background-color: var(--cor-input-fundo);
+  border: 2px solid var(--cor-input-fundo);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.quadro .selectMetodos h5:hover {
+  border: 2px solid var(--cor-input-borda);
+}
+.quadro .selectMetodos.ativo h5 {
+  color: var(--cor-input-branco);
+  border: 2px solid var(--cor-cera);
+}
+.quadro .selectMetodos.selecionado h5 {
+  color: var(--cor-input-branco);
+  border: 2px solid var(--cor-input-fundo);
+}
+.quadro .selectMetodos svg {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 15px;
+  min-width: 15px;
+  fill: var(--cor-modal-cinza-2);
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.quadro .selectMetodos.ativo svg {
+  fill: var(--cor-cera);
+}
+.quadro .selectMetodos .lista {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 10px;
+  padding: 20px 30px 20px 25px;
+  background-color: var(--cor-seletor-fundo);
+  box-shadow: var(--cor-seletor-sombra);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 70px;
+  left: -10px;
+  transition: all 0.3s;
+}
+.quadro .selectMetodos.ativo .lista {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  pointer-events: all;
+}
+.quadro .selectMetodos .lista p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-seletor-cinza-2);
+  transition: all 0.3s;
+  padding: 7px 0;
+  cursor: pointer;
+}
+.quadro .selectMetodos .lista p:hover,
+.quadro .selectMetodos .lista p:hover svg {
+  color: var(--cor-verde);
+  fill: var(--cor-verde);
+}
+.quadro .selectMetodos .lista p svg {
+  position: initial;
+  width: 20px;
+  min-width: 20px;
+  margin: 0 10px 0 0;
+  fill: var(--cor-seletor-cinza-2);
+}
+@media screen and (max-width: 1000px) {
+}
+/* Data */
+.quadro .data {
+  position: relative;
+  width: 100%;
+}
+.quadro .data h5 {
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-input-cinza);
+  background-color: var(--cor-input-fundo);
+  border: 2px solid var(--cor-input-fundo);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.quadro .data h5:hover {
+  border: 2px solid var(--cor-input-borda);
+}
+.quadro .data.ativo h5 {
+  border: 2px solid var(--cor-cera);
+}
+.quadro .data.selecionado h5 {
+  color: var(--cor-input-branco);
+}
+.quadro .data svg.setinha {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 15px;
+  min-width: 15px;
+  fill: var(--cor-modal-cinza-2);
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.quadro .data.ativo svg.setinha {
+  fill: var(--cor-cera);
+}
+@media screen and (max-width: 1000px) {
+  .quadro .data svg.setinha {
+    right: 15px;
+    top: 22px;
+  }
+}
+/* Cliente */
+.quadro .selecionarCliente {
+  position: relative;
+  width: 100%;
+}
+.quadro .selecionarCliente h5 {
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-input-cinza);
+  background-color: var(--cor-input-fundo);
+  border: 2px solid var(--cor-input-fundo);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.quadro .selecionarCliente h5:hover {
+  border: 2px solid var(--cor-input-borda);
+}
+.quadro .selecionarCliente h5.ativo {
+  border: 2px solid var(--cor-cera);
+}
+.quadro .selecionarCliente h5.selecionado {
+  color: var(--cor-input-branco);
+}
+.quadro .selecionarCliente svg.setinha {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 15px;
+  min-width: 15px;
+  fill: var(--cor-modal-cinza-2);
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.quadro .selecionarCliente.ativo svg.setinha {
+  fill: var(--cor-cera);
+}
+@media screen and (max-width: 1000px) {
+  .quadro .selecionarCliente svg.setinha {
+    right: 15px;
+    top: 22px;
+  }
+}
+/* Serviço */
+.quadro .selecionarServico {
+  position: relative;
+  width: 100%;
+}
+.quadro .selecionarServico h5 {
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-input-cinza);
+  background-color: var(--cor-input-fundo);
+  border: 2px solid var(--cor-input-fundo);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.quadro .selecionarServico h5:hover {
+  border: 2px solid var(--cor-input-borda);
+}
+.quadro .selecionarServico h5.ativo {
+  border: 2px solid var(--cor-cera);
+}
+.quadro .selecionarServico h5.selecionado {
+  color: var(--cor-input-branco);
+}
+.quadro .selecionarServico svg.setinha {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 15px;
+  min-width: 15px;
+  fill: var(--cor-modal-cinza-2);
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.quadro .selecionarServico.ativo svg.setinha {
+  fill: var(--cor-cera);
+}
+@media screen and (max-width: 1000px) {
+  .quadro .selecionarServico svg.setinha {
+    right: 15px;
+    top: 22px;
+  }
+}
+/* Botão ocultar e visualizar */
+button.ocultarNumeros {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  text-align: left;
+  font-family: var(--bold);
+  font-size: clamp(0.6rem, 3vw, 0.8rem);
+  color: var(--cor-painel-cinza);
+  position: relative;
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+button.ocultarNumeros:hover {
+  color: var(--cor-painel-branco);
+}
+button.ocultarNumeros svg {
+  width: 100%;
+  max-width: 20px;
+  min-width: 20px;
+  fill: var(--cor-painel-cinza);
+  pointer-events: none;
+  margin: 0 10px 0 0;
+  transition: all 0.3s;
+}
+button.ocultarNumeros:hover svg {
+  fill: var(--cor-painel-branco);
+}
+button.ocultarNumeros span {
+  width: 20px;
+  height: 2px;
+  min-width: 20px;
+  min-height: 2px;
+  position: absolute;
+  top: 19px;
+  left: 0px;
+  background-color: var(--cor-painel-cinza);
+  transform: rotate(-15deg);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+button.ocultarNumeros:hover span {
+  background-color: var(--cor-painel-branco);
+}
+button.ocultarNumeros.ativo span {
+  transform: rotate(-45deg);
+  opacity: 1;
+  visibility: visible;
+}
+/* Funcionário não pode ver */
+.naoPermitido {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.2;
+  filter: blur(3px);
+}
+/* Ocultar elementos */
+.ocultarElemento {
+  filter: blur(6px);
+}
+/* PDF oculto */
+.pdfOculto{
+  opacity: 0;
+  visibility: 0;
+  z-index: -1;
+}

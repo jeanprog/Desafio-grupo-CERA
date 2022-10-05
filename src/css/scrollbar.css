@@ -1,0 +1,32 @@
+/* Scrollbar */
+
+html {
+  scrollbar-color: var(--cor-scrollbar-claro) var(--cor-scrollbar-escuro);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--cor-scrollbar-escuro);
+  width: 10px;
+  height: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor-scrollbar-claro);
+  border-radius: 10px;
+  width: 5px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cor-cera);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--cor-scrollbar-escuro);
+}

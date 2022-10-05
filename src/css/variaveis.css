@@ -1,0 +1,291 @@
+/* Variaveis modo claro*/
+
+:root, body, body[tema='claro'],
+#modalEntrar,
+#cartao,
+#boleto,
+#pix,
+#status,
+#compativel,
+#assinatura {
+
+  /* Cor da plataforma */
+  --cor-cera: #FE1F2D;
+
+  /* Cores fixas */
+  --cor-branco-fixo: #FFFFFF;
+  --cor-preto-fixo: #000000;
+  --cor-cera-fixo: #FE1F2D;
+  --cor-cera-escuro-fixo: #ba212b;
+  --cor-cinza-fixo: #9f9f9f;
+
+  /* Preto e Branco */
+  --cor-preto: #FFFFFF;
+  --cor-branco: #000000;
+
+  /* Fundos */
+  --cor-fundo-tela: #e7e9f5;
+  --cor-fundo-tela-2: #ffffff;
+
+  /* Colorido */
+  --cor-verde: #18af78;
+  --cor-verde-2: #116e4c;
+  --cor-vermelho: #f14f4f;
+  --cor-vermelho-2: #a92e2e;
+  --cor-amarelo: #a5a320;
+  --cor-amarelo-2: #67661d;
+  --cor-laranja: #f0a31e;
+  --cor-laranja-2: #986b1e;
+  --cor-verde-neon: #2bb63d;
+  --cor-azul: #348fd5;
+  --cor-azul-2: #236faa;
+  --cor-azul-claro: #23a2ab;
+  --cor-ciano: #2ec791;
+  --cor-laranja-forte: #fd662b;
+  --cor-amarelo-forte: #f9b729;
+  --cor-vermelho-forte: #fb3737;
+  --cor-amarelo-musgo: #c97f0f;
+  --cor-roxo: #9a00f7;
+
+  /* Transparentes */
+  --cor-preto-transparente: #141419cc;
+  --cor-verde-transparente: #29e29e66;
+  --cor-vermelho-transparente: #ef3c3c66;
+  --cor-cera-transparente: #fe1f2d66;
+  --cor-cinza-transparente: #1414194f;
+
+  /* Degrades */
+  --cor-degrade-vermelho: linear-gradient(to left, #EF3C3C, #BB2727);
+  --cor-degrade-verde: linear-gradient(to left, #29E29E, #1B8769);
+  --cor-degrade-cera: linear-gradient(to left, #FE1F2D, #c81521);
+  --cor-degrade-cinza: linear-gradient(to left, #d7dae800, #d7dae8);
+  --cor-degrade-sombra: linear-gradient(to left, #14141940, #141419);
+
+  /* Títulos */
+  --cor-titulo-branco: #141419;
+  --cor-titulo-busca-fundo: #d5d8e8;
+  --cor-titulo-busca-borda: #d5d8e8;
+  --cor-titulo-busca-borda-2: #5e606e;
+  --cor-titulo-cinza: #5e606e;
+  --cor-titulo-cinza-2: #4A4F67;
+
+  /* Lista */
+  --cor-lista-fundo: #ffffff;
+  --cor-lista-borda: #d5d8e8;
+  --cor-lista-borda-2: #afb5cf;
+  --cor-lista-degrade: linear-gradient(to left, #ffffff00, #ffffff);
+  --cor-lista-branco: #141419;
+  --cor-lista-cinza: #5e606e;
+  --cor-lista-cinza-2: #777a8b;
+  --cor-lista-botao: #5e606e;
+  --cor-lista-botao-2: #777a8b;
+
+  /* Footer */
+  --cor-footer-fundo: #ffffff;
+  --cor-footer-branco: #141419;
+  --filtro-footer-logo: brightness(0%);
+
+  /* Painel */
+  --cor-painel-quadro: #ffffff;
+  --cor-painel-quadro-borda: #b2b6ce;
+  --cor-painel-quadro-linha: #e8eaf5;
+  --cor-painel-branco: #141419;
+  --cor-painel-cinza: #26262f;
+
+  /* Loading */
+  --cor-loading-fundo: #ffffff;
+  --cor-loading-branco: #141419;
+
+  /* Seletores */
+  --cor-seletor-sombra: 0px 0px 40px 0 #18225833;
+  --cor-seletor-fundo: #ffffff;
+  --cor-seletor-branco: #141419;
+  --cor-seletor-cinza: #c8cce1;
+  --cor-seletor-cinza-2: #868ca9;
+
+  /* Selection */
+  --cor-selecao-escuro: #9399b7;
+
+  /* Scrollbar */
+  --cor-scrollbar-claro: #7a809c;
+  --cor-scrollbar-escuro: #d7dae9;
+
+  /* Input e Textarea */
+  --cor-input-branco: #141419;
+  --cor-input-cinza: #9fa3ba;
+  --cor-input-preto: #141419;
+  --cor-input-fundo: #e7e9f5;
+  --cor-input-borda: #b6bacd;
+
+  /* Label */
+  --cor-label-branco: #141419;
+
+  /* Modal */
+  --cor-modal-fundo: #ffffff;
+  --cor-modal-fundo-2: #e7e9f5;
+  --cor-modal-scrollbar: #c1c4d7;
+  --cor-modal-branco: #141419;
+  --cor-modal-cinza: #777a8b;
+  --cor-modal-cinza-2: #aab1ce;
+
+  /* Nav */
+  --cor-nav-itens-branco: #FFFFFF;
+  --cor-nav-itens-cinza: #4A4F67;
+  --cor-nav-sombra: #141419;
+  --cor-nav-fundo-transparente: #99a2b965;
+
+  --cor-nav-menu: #ffffff;
+  --cor-nav-menu-branco: #1b1c21;
+  --cor-nav-menu-cinza: #a0a5ba;
+
+  --cor-nav-busca: #ffffff;
+  --cor-nav-busca-branco: #1b1c21;
+  --cor-nav-busca-cinza: #a0a5ba;
+
+  /* Fontes */
+  --regular: 'mark-pro-regular';
+  --bold: 'mark-pro-bold';
+}
+
+/* Variaveis modo escuro */
+
+:root, body, body[tema='escuro'] {
+
+  /* Cor da plataforma */
+  --cor-cera: #FE1F2D;
+
+  /* Cores fixas */
+  --cor-branco-fixo: #FFFFFF;
+  --cor-preto-fixo: #000000;
+  --cor-cera-fixo: #FE1F2D;
+  --cor-cera-escuro-fixo: #ba212b;
+  --cor-cinza-fixo: #9f9f9f;
+
+  /* Preto e Branco */
+  --cor-preto: #000000;
+  --cor-branco: #ffffff;
+
+  /* Fundos */
+  --cor-fundo-tela: #141419;
+  --cor-fundo-tela-2: #1b1c21;
+
+  /* Colorido */
+  --cor-verde: #1fc98b;
+  --cor-verde-2: #1a8f64;
+  --cor-vermelho: #EF3C3C;
+  --cor-vermelho-2: #962929;
+  --cor-amarelo: #d6d330;
+  --cor-amarelo-2: #828128;
+  --cor-laranja: #F5B13C;
+  --cor-laranja-2: #8f6929;
+  --cor-verde-neon: #3CF555;
+  --cor-azul: #3CA5F5;
+  --cor-azul-2: #267bbd;
+  --cor-azul-claro: #29D5E2;
+  --cor-ciano: #8AFFD7;
+  --cor-laranja-forte: #ff510d;
+  --cor-amarelo-forte: #ffb20d;
+  --cor-vermelho-forte: #f72626;
+  --cor-amarelo-musgo: #c97f0f;
+
+  /* Transparentes */
+  --cor-preto-transparente: #141419cc;
+  --cor-verde-transparente: #29e29e66;
+  --cor-vermelho-transparente: #ef3c3c66;
+  --cor-cera-transparente: #fe1f2d66;
+  --cor-cinza-transparente: #14141965;
+
+  /* Degrades */
+  --cor-degrade-vermelho: linear-gradient(to left, #EF3C3C, #BB2727);
+  --cor-degrade-verde: linear-gradient(to left, #29E29E, #1B8769);
+  --cor-degrade-cera: linear-gradient(to left, #FE1F2D, #c81521);
+  --cor-degrade-sombra: linear-gradient(to left, #14141940, #141419);
+  --cor-degrade-cinza: linear-gradient(to left, #191C2A00, #191C2A);
+
+  /* Títulos */
+  --cor-titulo-branco: #ffffff;
+  --cor-titulo-busca-fundo: #1b1c21;
+  --cor-titulo-busca-borda: #1b1c21;
+  --cor-titulo-busca-borda-2: #24262d;
+  --cor-titulo-cinza: #4c4e59;
+  --cor-titulo-cinza-2: #3f414b;
+
+  /* Lista */
+  --cor-lista-fundo: #141419;
+  --cor-lista-borda: #1b1c21;
+  --cor-lista-borda-2: #26262f;
+  --cor-lista-degrade: linear-gradient(to left, #1b1c2100, #1b1c21);
+  --cor-lista-branco: #ffffff;
+  --cor-lista-cinza: #5e606e;
+  --cor-lista-cinza-2: #777a8b;
+  --cor-lista-botao: #26262f;
+  --cor-lista-botao-2: #363A4D;
+
+  /* Footer */
+  --cor-footer-fundo: #1b1c21;
+  --cor-footer-branco: #ffffff;
+  --filtro-footer-logo: brightness(100%);
+
+  /* Painel */
+  --cor-painel-fundo: #141419;
+  --cor-painel-quadro: #1b1c21;
+  --cor-painel-quadro-borda: #434450;
+  --cor-painel-quadro-linha: #27282f;
+  --cor-painel-branco: #ffffff;
+  --cor-painel-cinza: #777a8b;
+
+  /* Loading */
+  --cor-loading-fundo: #141419;
+  --cor-loading-branco: #FFFFFF;
+
+  /* Seletores */
+  --cor-seletor-sombra: 0px 0px 40px 0 rgb(6, 9, 22, 0.5);
+  --cor-seletor-fundo: #26262f;
+  --cor-seletor-branco: #FFFFFF;
+  --cor-seletor-cinza: #5e606e;
+  --cor-seletor-cinza-2: #777a8b;
+
+  /* Selection */
+  --cor-selecao-escuro: #5e606e;
+
+  /* Scrollbar */
+  --cor-scrollbar-claro: #5e606e;
+  --cor-scrollbar-escuro: #1b1c21;
+
+  /* Input e Textarea */
+  --cor-input-branco: #FFFFFF;
+  --cor-input-cinza: #626474;
+  --cor-input-preto: #FFFFFF;
+  --cor-input-fundo: #1b1c21;
+  --cor-input-borda: #363A4D;
+
+  /* Label */
+  --cor-label-branco: #FFFFFF;
+
+  /* Modal */
+  --cor-modal-fundo: #141419;
+  --cor-modal-fundo-2: #1b1c21;
+  --cor-modal-scrollbar: #26262f;
+  --cor-modal-branco: #FFFFFF;
+  --cor-modal-cinza: #777a8b;
+  --cor-modal-cinza-2: #5e606e;
+
+  /* Nav */
+  --cor-nav-itens-branco: #FFFFFF;
+  --cor-nav-itens-cinza: #696c7e;
+  --cor-nav-sombra: #141419;
+  --cor-nav-fundo-transparente: #141419d0;
+
+  --cor-nav-menu: #1b1c21;
+  --cor-nav-menu-branco: #FFFFFF;
+  --cor-nav-menu-cinza: #696c7e;
+
+  --cor-nav-busca: #1b1c21;
+  --cor-nav-busca-branco: #FFFFFF;
+  --cor-nav-busca-cinza: #696c7e;
+
+  /* Fontes */
+  --regular: 'mark-pro-regular';
+  --bold: 'mark-pro-bold';
+}
+

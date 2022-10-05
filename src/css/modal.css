@@ -1,0 +1,162 @@
+/* Modal */
+section.modal {
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 5;
+}
+section.modal.mostrar {
+  display: flex;
+}
+/* Modal Background */
+section.modal .background {
+  background-color: var(--cor-cera);
+  opacity: 0.6;
+  width: 95%;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 6;
+}
+section.modal.mostrar .background {
+  animation: mostrarBackgroundModal 0.3s linear;
+}
+/* Modal Quadro */
+section.modal .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  background-color: var(--cor-modal-fundo);
+  width: 100%;
+  max-width: 700px;
+  min-height: 100vh;
+  padding: 50px 50px 50vh 50px;
+  border-radius: 10px 0 0 10px;
+  z-index: 7;
+  transition: all 0.3s;
+}
+section.modal.mostrar .quadro {
+  animation: mostrarQuadroModal 0.3s linear;
+}
+/* Título */
+section.modal .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 0 0 10px 0;
+}
+section.modal .titulo svg.icone {
+  width: 50px;
+  min-width: 50px;
+  fill: var(--cor-modal-cinza);
+}
+section.modal .titulo .texto {
+  padding: 0 0 0 10px;
+  margin-right: auto;
+}
+section.modal .titulo .texto h2 {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-modal-branco);
+  line-height: 1.3;
+}
+section.modal .titulo .texto h2 span {
+  font-family: var(--regular);
+  color: var(--cor-modal-cinza);
+}
+section.modal .titulo button {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: var(--bold);
+  font-size: clamp(0.6rem, 3vw, 0.8rem);
+  color: var(--cor-branco-fixo);
+  background: var(--cor-vermelho);
+  background-size: 600%;
+  transition: all 0.3s;
+}
+section.modal .titulo button:hover {
+  background: var(--cor-vermelho-2);
+}
+section.modal .titulo button svg {
+  width: 10px;
+  min-width: 10px;
+  fill: var(--cor-branco-fixo);
+  pointer-events: none;
+  margin: 0 0 0 10px;
+  transition: all 0.3s;
+}
+section.modal .titulo button:hover svg {
+  transform: scale(1.2);
+}
+/* Resumo */
+section.modal .quadro .resumo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5px 0 10px 0;
+}
+section.modal .quadro .resumo .parte {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 15px 0;
+}
+section.modal .quadro .resumo .parte p {
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-modal-cinza);
+}
+section.modal .quadro .resumo .parte p span {
+  color: var(--cor-verde)
+}
+section.modal .quadro .resumo .parte svg {
+  width: 20px;
+  min-width: 20px;
+  margin: 0 5px 0 0;
+  fill: var(--cor-verde);
+}
+/* Modal Responsivo */
+@media screen and (max-width: 810px) {
+  section.modal {
+    padding: 0;
+  }
+  /* Modal Quadro */
+  section.modal .quadro {
+    padding: 20px 20px 50vh 20px;
+    border-radius: 0px;
+  }
+  /* Título */
+  section.modal .titulo {
+    padding: 0 0 0 0;
+  }
+  section.modal .titulo svg.icone {
+    width: 35px;
+    min-width: 35px;
+  }
+  section.modal .titulo .texto h2 {
+    font-size: clamp(0.8rem, 3vw, 1.1rem);
+  }
+  section.modal .titulo button {
+    padding: 12px;
+  }
+}

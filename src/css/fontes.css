@@ -1,0 +1,23 @@
+/* Fontes */
+
+@font-face {
+  font-family: 'mark-pro-regular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://arquivos.plataformacera.com.br/fonts/mark-pro-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'mark-pro-bold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://arquivos.plataformacera.com.br/fonts/mark-pro-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'abolition';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://arquivos.plataformacera.com.br/fonts/abolition.woff') format('woff');
+}

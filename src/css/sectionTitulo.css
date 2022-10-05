@@ -1,0 +1,153 @@
+/* Section Titulo */
+section.titulo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px 0 40px;
+  position: relative;
+}
+section.titulo button.adicionar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--cor-cera);
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+section.titulo button.adicionar svg {
+  width: 15px;
+  min-width: 15px;
+  fill: var(--cor-branco-fixo);
+  margin: 0 0 0 10px;
+  pointer-events: none;
+}
+section.titulo button.adicionar p {
+  font-family: var(--regular);
+  font-size: clamp(0.7rem, 3vw, 0.9rem);
+  color: var(--cor-branco-fixo);
+}
+section.titulo button.adicionar p span {
+  font-family: var(--bold);
+}
+section.titulo button.adicionar:hover {
+  opacity: 0.8;
+}
+/* Tela */
+section.titulo .tela {
+  display: flex;
+  align-items: center;
+}
+section.titulo .tela svg {
+  width: 40px;
+  min-width: 40px;
+  fill: var(--cor-titulo-branco);
+  margin: 0 10px 0 0;
+}
+section.titulo .tela h2 {
+  font-family: var(--bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-titulo-branco);
+}
+/* Data */
+section.titulo .data {
+  display: flex;
+  align-items: center;
+}
+section.titulo .data h2 {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-titulo-branco);
+  margin: 0 20px;
+  text-align: center;
+}
+section.titulo .data h2 span {
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-branco-fixo);
+  background-color: var(--cor-titulo-cinza);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 0 0 10px;
+}
+section.titulo .data button {
+  display: flex;
+  align-items: center;
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-titulo-cinza);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid var(--cor-titulo-cinza);
+  transition: all 0.3s;
+}
+section.titulo .data button:hover {
+  color: var(--cor-titulo-branco);
+  border: 2px solid var(--cor-titulo-branco);
+}
+section.titulo .data button:hover svg {
+  fill: var(--cor-titulo-branco);
+}
+section.titulo .data button svg {
+  width: 10px;
+  min-width: 10px;
+  fill: var(--cor-titulo-cinza);
+  pointer-events: none;
+  transition: all 0.3s;
+}
+section.titulo .data button.voltar svg {
+  margin: 0 10px 0 0;
+}
+section.titulo .data button.avancar svg {
+  margin: 0 0 0 10px;
+}
+section.titulo .input.busca input {
+  background-color: var(--cor-titulo-busca-fundo);
+}
+@media screen and (max-width: 1000px) {
+  section.titulo {
+    padding: 20px 20px 0 20px;
+  }
+  /* Tela */
+  section.titulo .tela svg {
+    width: 30px;
+    min-width: 30px;
+    margin: 0 10px 0 0;
+  }
+  section.titulo .tela h2 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+  }
+  /* Data */
+  section.titulo .data {
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--cor-painel-quadro);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  section.titulo .data h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+  }
+  section.titulo .data h2 span {
+    margin: 5px 0 0 0;
+  }
+  section.titulo .data button svg {
+    width: 18px;
+    min-width: 18px;
+  }
+  section.titulo .data button.voltar svg {
+    margin: 0 0 0 0;
+  }
+  section.titulo .data button.avancar svg {
+    margin: 0 0 0 0;
+  }
+  section.titulo .data button span {
+    display: none;
+  }
+}
